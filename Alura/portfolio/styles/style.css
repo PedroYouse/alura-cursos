@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22D4FD;
+
+    --font-primaria: var(--font-primaria);
+    --font-secundaria: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: rgb(255, 255, 255);
+}
+
+.header{
+    padding: 2% 0% 0% 15%;
+}
+
+.header__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link{
+    font-family: var(--font-secundaria) ;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.apresentacao{
+    margin: 5% 15%;
+    gap: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-family: var(--font-primaria);
+    font-size: 2.25rem;
+}
+
+strong {
+    color: blue;
+}
+
+.apresentacao__conteudo__texto{
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+}
+
+.strong-ror{
+    color: red;
+}
+
+.apresentacao__botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__botoes__subtitulo{
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao__botoes__link{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid var(--cor-terciaria);
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 21.5px 0px;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
+}
+
+.apresentacao__botoes__link:hover{
+    background-color: #272727;
+    padding: 3%;
+}
+
+.apresentacao__imagem{
+    width: 50%;
+}
+
+.footer{
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+
+    .header{
+        padding: 10%;
+    }
+
+    .header__menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%, ;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
